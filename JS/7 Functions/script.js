@@ -99,6 +99,122 @@ function testSumm(numOne, numTwo) {
   }
 }
 
-let funcResult = testSumm(1,3);
+let funcResult = testSumm(1, 3);
 
-console.log(`Result of variable which is = function testSummResult : ${funcResult}`);
+console.log(
+  `Result of variable which is = function testSummResult : ${funcResult}`
+);
+
+//break
+console.log("Break");
+
+function takeSumm(numOne, numTwo) {
+  let resultSumm = changeSumm(numOne, numTwo);
+  console.log(resultSumm);
+}
+
+function changeSumm(numOne, numTwo) {
+  return numOne + numTwo;
+}
+
+takeSumm(19, 20);
+
+//break
+
+function testGetSumm(testSummOne, testSummTwo) {
+  let result = 1;
+
+  for (let i = 0; i < testSummOne; i++) {
+    result *= testSummTwo;
+  }
+  return result;
+}
+console.log(testGetSumm(4, 3));
+
+// break
+console.log("break");
+
+//* Good example
+function myTest(num1, num2) {
+  let myTestNum = 2;
+  if (myTestNum + num1 * num2 === 83) {
+    for (let i = 0; i <= 3; i++) {
+      console.log(`if = ${i}`);
+    }
+  } else {
+    console.log("Else, its wrong ");
+  }
+}
+
+myTest(9, 9);
+
+//break
+let myTestFunc = function (first, second) {
+  return first + second;
+};
+
+console.log(myTestFunc(1, 2));
+
+//break
+
+function getSumm() {
+  let summ = 1 + 2;
+  console.log(summ);
+}
+
+let someVar = getSumm;
+
+someVar();
+getSumm();
+
+//! Important
+/*
+Объявление функции (Function Declaration)
+function getSumm() {
+	let summ = 1 + 2;
+	console.log(summ);
+};
+getSumm();
+
+Функциональное выражение (Function Expression)
+let showMessage = function () {
+	console.log('Привет!');
+};
+showMessage();
+*/
+console.log("break");
+
+//? How to code functions when using a use strict mode
+
+let funcTestMode;
+
+if (2 < 3) {
+  funcTestMode = function (numOne, numTwo) {
+    result = numOne / numTwo;
+    console.log(result);
+    return result;
+  };
+}
+
+funcTestMode(10, 2);
+
+//break
+
+//Test 
+const a = (bigNum) => console.log (bigNum + 100);
+a(100);
+
+//* Arrow functions
+
+//*1 - one string arrow function
+let createArrowFunction = (text, name) => text + ", " + name + "!";
+console.log(createArrowFunction("Hello", "Misha"));
+
+console.log('break');
+
+//*2 arrow function
+let createSecondArrowFunction = (text, name) => {
+  console.log(text + ", " + name + "!");
+};
+createSecondArrowFunction("Bye", "Michael");
+
