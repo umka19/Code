@@ -148,7 +148,93 @@ function calcSumm(one, two) {
 console.log(calcSumm(1, 2));
  */
 
-
-let arrowFunction = (numOne, numTwo) => console.log(numOne + numTwo);
+/* let arrowFunction = (numOne, numTwo) => console.log(numOne + numTwo);
 
 arrowFunction(1, 3);
+
+let secondArrowFunction = (numOne, numTwo, text) => {
+  result = numOne + numTwo;
+  resultWithMessage = result + text;
+  return resultWithMessage;
+};
+
+console.log(secondArrowFunction(1, 3, " < less than 10")); */
+
+/* 
+setTimeout(функция или код, задержка, параметр, ...параметр);
+setInterval(функция или код, задержка, параметр, ...параметр); 
+*/
+
+/* function showMessage(text, num1, num2) {
+  console.log(text);
+  arrowFunction(num1,num2);
+} */
+
+/* setTimeout (showMessage, 5000, "5s delay") */
+/* setTimeout (arrowFunction, 5000, 1, 3); */
+/* setInterval(showMessage, 3000, "5s delay", 10, 5); */
+//setInterval(arrowFunction, 5000, 1, 3);
+
+/* function consoleMessage (text) {
+	console.log(text);
+	setTimeout (consoleMessage, 1000, text);
+}
+
+setTimeout (consoleMessage, 1000, "Text"); */
+
+/* function miniCount (num) {
+	if (num <= 10){
+	console.log(num);
+	setTimeout (miniCount, 1000, ++num);
+	}
+}
+setTimeout (miniCount, 1000, 1); */
+
+/* function timeClear(num) {
+  console.log(num);
+  let timeId = setTimeout(timeClear, 1000, ++num);
+  if (num === 6) {
+    clearTimeout(timeId);
+  }
+}
+setTimeout(timeClear, 1000, 0); */
+/* let result = 1;
+
+function intervalTest(num) {
+	result *= num;
+	console.log(result);
+	if (result >= 26) {
+		clearInterval(timeId);
+	}
+}
+let timeId = setInterval (intervalTest, 1000, 25);
+ */
+
+/* function createMessage (name, lastName, age) {
+	return `My name:${name}, lastname:${lastName}, age:${age}`;
+
+}
+
+function showMessage (text) {
+	console.log(text);
+}
+
+function initMessage (name, lastName, age) {
+	showMessage(createMessage(name, lastName, age));
+}
+
+createMessage ("Misha", "Shtein", 18);
+showMessage ("text 1");
+initMessage ("Mykhailo", "Likhtenshtein", "18");
+ */
+
+'use strict'
+
+let funcResult;
+
+if (2 > 1) {
+	funcResult = function () {
+		console.log('Сообщение');
+	}
+}
+funcResult(); // Error (showMessage is not defined)
