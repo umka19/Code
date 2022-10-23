@@ -200,8 +200,8 @@ funcTestMode(10, 2);
 
 //break
 
-//Test 
-const a = (bigNum) => console.log (bigNum + 100);
+//Test
+const a = (bigNum) => console.log(bigNum + 100);
 a(100);
 
 //* Arrow functions
@@ -210,11 +210,40 @@ a(100);
 let createArrowFunction = (text, name) => text + ", " + name + "!";
 console.log(createArrowFunction("Hello", "Misha"));
 
-console.log('break');
+console.log("break");
 
 //*2 arrow function
 let createSecondArrowFunction = (text, name) => {
   console.log(text + ", " + name + "!");
 };
 createSecondArrowFunction("Bye", "Michael");
+
+//break
+/* console.log("Break before sets");
+//* setTimeout and setInterval
+
+ function showMessage(text, name) {
+  console.log(`${text}, ${name}!`);
+} */
+/* setInterval(showMessage, 3000, "Привет", "Вася");  */
+
+/* setTimeout(showMessage, 500, "Привет", "Вася"); */
+
+/* let resultTest = 0;
+
+function showNumber(num) {
+	resultTest += num;
+	console.log(resultTest);
+	if (resultTest === 5) {
+		clearInterval(timeId);
+	}
+}
+let timeId = setInterval(showNumber, 1000, 1); */
+
+function showMessageOne() {
+	console.log("А я первый!");
+}
+function showMessageTwo() {
+	console.log("А я второй(");
+}
 
