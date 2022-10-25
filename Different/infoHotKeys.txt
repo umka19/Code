@@ -1,0 +1,35 @@
+1. Delete Line - Ctrl+Shift+K
+2. Insert Line Below - Ctrl+Enter
+3. Move Line Down - Alt+Down
+4. Move Line Up - Alt+Up
+5. Copy Line Down - Shift+Alt+Down
+6. Copy Line Up - Shift+Alt+Up
+7. Undo - Ctrl+Z	
+8. Redo - Ctrl+Y	
+9. Add Selection To Next Find Match - Ctrl+D
+10. Move Last Selection To Next Find Match - Ctrl+K Ctrl+D 
+11. Back to last cursor point - Mouse5
+12. Insert cursor at end of each line selected - Shift+Alt+I
+13.Select all occurrences of current selection - Ctrl+Shift+L	
+14. Select all occurrences of current word - Ctrl+F2	
+15. Select current line	- Ctrl+L	
+16. Insert Cursor Below	- Ctrl+Alt+Down	
+17. Insert Cursor Above	- Ctrl+Alt+Up	
+18. Indent Line - Ctrl+]	
+19. Outdent Line - Ctrl+[
+20. Go to Beginning of Line - Home
+21. Go to End of Line - End
+22. Go to End of File - Ctrl+End	
+23. Go to Beginning of File	- Ctrl+Home
+24. Toggle Line Comment - Ctrl+/
+25. Find - Ctrl+F
+26. Replace	- Ctrl+H
+27. Find Next - Enter
+28. Find Previous - Shift+Enter
+29. Go to Line... - Ctrl+G
+
+          
+
+
+
+? - Jump to matching bracket	Ctrl+Shift+\
